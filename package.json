@@ -1,7 +1,7 @@
 {
     "name": "bminus",
     "version": "0.0.0-semantic-release",
-    "description": "",
+    "description": "My semantic-release test package",
     "main": "src/index.js",
     "scripts": {
         "test": "mocha test/**/*.test.js",
