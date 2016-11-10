@@ -1,0 +1,32 @@
+{
+    "name": "bminus",
+    "version": "0.0.0-semantic-release",
+    "description": "",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "mocha test/**/*.test.js",
+        "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+        "commit": "git-cz"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gerard2p/bminus.git"
+    },
+    "author": "Gerardo Perez Perez <gerard2perez@outlook.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/gerard2p/bminus/issues"
+    },
+    "homepage": "https://github.com/gerard2p/bminus#readme",
+    "devDependencies": {
+        "commitizen": "^2.8.6",
+        "cz-conventional-changelog": "^1.2.0",
+        "mocha": "^3.1.2",
+        "semantic-release": "^4.3.5"
+    },
+    "config": {
+        "commitizen": {
+            "path": "cz-conventional-changelog"
+        }
+    }
+}
