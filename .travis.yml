@@ -15,7 +15,7 @@ branches:
     - master
 before_install:
   - npm config set spin false
-  - nginx -c `pwd`/etc/nginx.conf
+  - nginx
 install:
   - npm i
   - nginx -t
