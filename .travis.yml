@@ -18,7 +18,7 @@ before_install:
   - nginx -c `pwd`/nginx.conf -p `pwd`/
 install:
   - npm i
-  - nginx -t -p `pwd`/
+  - nginx -t -c `pwd`/nginx.conf -p `pwd`/
 script:
   - npm test
 after_success:
