@@ -6,7 +6,7 @@ addons:
   apt:
     packages:
     - nginx
-sudo: true
+sudo: required
 cache:
   directories:
     - node_modules
@@ -15,7 +15,7 @@ branches:
     - master
 before_install:
   - npm config set spin false
-  - nginx -c `pwd`/nginx.conf
+  - nginx -c `pwd`/nginx.conf -p `pwd`/
 install:
   - npm i
   - nginx -t
