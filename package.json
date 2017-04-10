@@ -6,7 +6,7 @@
     "scripts": {
         "test": "mocha test/**/*.test.js",
         "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-        "commit": "git-cz"
+        "commit": "git add -A && git-cz"
     },
     "repository": {
         "type": "git",
